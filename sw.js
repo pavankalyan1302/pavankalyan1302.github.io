@@ -6,6 +6,9 @@ const assets = [
   '/img/biga.jgp',
   '/img/ba.jgp',
   '/img/back.jgp',
+  '/img/biga1.jgp',
+  
+  
 ];
 
 // install event

@@ -191,10 +191,18 @@ a{
   margin-bottom: 100px;
 }
 
-body{
-  background: url('img/b.jpg');
-  background-position: center center;
-  background-size: contain;
+body {
+  background: url('img/l.jpg') no-repeat center fixed;     
+      background-size: cover;
+}
+
+/* For larger devices */
+@media only screen and (min-device-width: 500px) {
+    body { 
+      background: url('img/lalasae.jpg') no-repeat center fixed;     
+      background-size: cover;
+      
+   }
 }
    
    </style>

@@ -6,6 +6,7 @@ const assets = [
   'page3.html',
   '/js/app.js',
   '/img/a.jgp',
+  '/img/vidp.jgp',
   '/img/l.jgp',
   '/img/lalasae.jgp',
   '/img/biga.jgp',

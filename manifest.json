@@ -2,7 +2,7 @@
   "name": "LALASA❤️",
   "short_name": "Madhurima❤️",
   "start_url": "/index.html",
-  "display": "standalone",
+  "display": "minimal-ui",
   "background_color": "#FFE9D2",
   "theme_color": "#FFE1C4",
   

@@ -1,14 +1,16 @@
 const assets = [
   '/',
+  '/main.html',
   '/index.html',
+  '/page1.html',
+  'page2.html',
+  'page3.html',
   '/js/app.js',
   '/img/a.jgp',
   '/img/biga.jgp',
   '/img/ba.jgp',
   '/img/back.jgp',
   '/img/biga1.jgp',
-  
-  
 ];
 
 // install event

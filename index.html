@@ -12,43 +12,45 @@
     <meta name="theme-color" content="#FFE1C4">
   </head>
 <body background="back.jpg">
-  <div class="cover super-centered-container">
+   
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:100,300' rel='stylesheet' type='text/css'>
+<div class="cover super-centered-container">
+  <canvas id="can">Get a browser</canvas>
   <center>
-  <div class="container">
-    <h1>LALASA❤️ BDAY🎂 in</h1>
-    <ul>
-      <li><span id="days"></span>days</li>
-      <li><span id="hours"></span>Hours</li>
-      <li><span id="minutes"></span>Minutes</li>
-      <li><span id="seconds"></span>Seconds</li>
-    </ul>
+  <div class="overlay-static">    
+    <div class="inline-blocks">
+     
+      <img class="image block" src="img/back.jpg">
+       
+    </div>
+   
   </div>
 </center>
+
+
+
+  <div class="btn">
+      
+    
+    <button id="myBtn" onclick="myFunction()">Load More Love</button>
+
+    <script>
+      function myFunction() {
+        window.location.href='page1.html';
+      }
+
+    </script>
   </div>
 
-  <style>
-  * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-h1 {
-  font-weight: normal;
-}
 
-li {
-  display: inline-block;
-  font-size: 1.5em;
-  list-style-type: none;
-  padding: 1em;
-  text-transform: uppercase;
-}
+  
+  
+</div>
+<div class="wish">
+    <h1 class="bday">Happy Birthday <a href="https://instagram.com/14_lalasa?igshid=1jqy25g9n70mz">@LALASA❤️</a></h1>
 
-li span {
-  display: block;
-  font-size: 4.5rem;
-}
+</div>
 
 
 
@@ -56,64 +58,94 @@ li span {
 
 
 
-
-
-
-
-
-
-/* general styling */
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  background:#131313;
-  overflow:hidden;
-}
-body {
-  background: url('img/biga1.jpg') no-repeat center fixed;     
-      background-size: cover;
-}
-
-/* For larger devices */
-@media only screen and (min-device-width: 500px) {
-    body { 
-      background: url('img/a.jpg') no-repeat center fixed;     
-      background-size: cover;
-      
+</body>
+ <style>
+   #myBtn{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+     
    }
-}
-
-
-body {
+.btn{
  
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  
+  
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  margin: 0;
+  -ms-transform: translate(-50%);
+  transform: translateX(-50%);
+     
+  
 
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: -apple-system, 
-    BlinkMacSystemFont, 
-    "Segoe UI", 
-    Roboto, 
-    Oxygen-Sans, 
-    Ubuntu, 
-    Cantarell, 
-    "Helvetica Neue", 
-    sans-serif;
+
+}
+   
+.inline-blocks > .block{
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+@media only screen and (min-device-width: 400px){
+    .inline-blocks > .block{
+  display: inline-block;
+  vertical-align: middle;
+  
 }
 
-.container {
+    .image{
+ 
+ height: 100px;
+ width: 100px;
+ border-radius: 180px;
+ border: 3px solid #fff;
 
-  color: whitesmoke;
-  margin: 0 auto;
-  padding: 0.5rem;
+}
+
+}
+
+.image{
+    
+    margin: 0;
+  -ms-transform: translate(15%);
+  transform: translateY(15%);
+
+  height: 100px;
+  width: 100px;
+  border-radius: 180px;
+  border: 3px solid #fff;
+ 
+}
+
+.twenty-one{
+  font-size: 240px;
+  font-family: 'Josefin Sans';
+  font-weight: 100;
+  line-height: 180px;
+  color: #fff;
+  margin: 40px 0;
+}
+
+.wish{
+  position: relative;
+  bottom: -76.5%;
+  font-size: 12px;
+  color: #fff;
+  font-family: 'Josefin Sans';
+  font-weight: 300;
   text-align: center;
+  z-index: 1000;
+  
 }
+
 .cover{
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.62);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -121,39 +153,173 @@ body {
   left: 0;
   z-index: 1000;
 }
+
+#can{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+
 .super-centered-container{
  display:flex;
   align-items: center;
   justify-content: center;
 }
 
-  </style>
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background:#131313;
+  overflow:hidden;
+}
 
+a{
+  color: skyblue;
+  text-decoration: none;
+}
+
+.overlay-static{
+  position: relative;
+  z-index: 1000;
+  margin-bottom: 100px;
+}
+
+body {
+  background: url('img/l.jpg') no-repeat center fixed;     
+      background-size: cover;
+}
+
+/* For larger devices */
+@media only screen and (min-device-width: 500px) {
+    body { 
+      background: url('img/lalasae.jpg') no-repeat center fixed;     
+      background-size: cover;
+      
+   }
+}
+   
+   </style>
+  
+  
   <script>
-    const second = 1000,
-      minute = second * 60,
-      hour = minute * 60,
-      day = hour * 24;
+    
+const TwoPI = Math.PI * 2;
+var w = window.innerWidth;
+var h = window.innerHeight;
+var center_x = w / 2;
+var center_y = h / 2;
 
-let countDown = new Date('Aug 14, 2020 00:00:00').getTime(),
-    x = setInterval(function() {    
+var colors = [ '#E8D45B', '#8CFF00','#FF9E00 ']
 
-      let now = new Date().getTime(),
-          distance = countDown - now;
+// I know the abs is not needed... but oh well
+var max_distance = Math.abs(Math.max(center_x, center_y));
+var min_distance = Math.abs(Math.min(center_x, center_y));
+function Firefly(){
+  this.velocity = 0;
+  var random_angle = Math.random() * TwoPI;
+  this.x = center_x +  Math.sin(random_angle) * ((Math.random() * (max_distance - min_distance) + min_distance));
+  this.y = center_y + Math.cos(random_angle) * ((Math.random() * (max_distance - min_distance) + min_distance));
 
-      document.getElementById('days').innerText = Math.floor(distance / (day)),
-        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+  
+  
+  this.angle_of_attack = Math.atan2(  this.y - center_y ,  this.x - center_x);
+  this.vel =  ( Math.random() * 5 ) + 5 ;
+  
+  this.color = colors[ ~~(colors.length * Math.random()) ]
+  
+  
+  this.xvel = this.vel * Math.cos( this.angle_of_attack );
+  this.yvel = this.vel * Math.sin( this.angle_of_attack );
+  this.size = 2 + Math.random() * 2;
+  
+  this.phase_diff = Math.random() * TwoPI;
+    
+}
 
-      //do something later when date is reached
-      //if (distance < 0) {
-      //  clearInterval(x);
-      //  'IT'S MY BIRTHDAY!;
-      //}
 
-    }, second)
-  </script>
+
+Firefly.prototype.move = function(dt){
+  if( isOnHeart(this.x, this.y)){
+    this.size -= 0.001;
+    return;
+  }
+  this.x += this.xvel * dt;
+  this.y += this.yvel * dt;
+}
+
+Firefly.prototype.render = function(ctx, now){
+  if( this.size < 1) {
+    return;
+  }
+  ctx.globalAlpha = Math.max(Math.abs(Math.sin( (now + this.phase_diff) / (~~(this.size * 100)) )), 0.4);
+  ctx.fillStyle = this.color;
+  ctx.shadowColor = this.color;
+  ctx.shadowBlur = 20 / this.size; 
+  ctx.beginPath();
+  ctx.arc( this.x, this.y, this.size, 0, TwoPI, false);
+  ctx.closePath();
+  ctx.fill();
+}
+
+var max_fireflies = 500;
+var canvas = document.getElementById('can');
+var ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+var fireflies = [];
+
+
+var last = Date.now();
+var dt = 0, now = 0;
+var alive_fireflies = 0;
+var last_emit = 0;
+
+function render(){
+  now = Date.now();
+  dt = (last - now) / 150; 
+  last = now;
+  ctx.clearRect(0,0,w,h);
+  fireflies.forEach(function(f){
+    f.move(dt);
+    f.render(ctx, now);    
+  });
+  
+  fireflies = fireflies.filter(function(f){
+    return (f.size > 1);
+  });
+
+  alive_fireflies = fireflies.length;  
+  
+  if( alive_fireflies < max_fireflies && last_emit - now < - 100){
+    fireflies.push( new Firefly());
+    last_emit = now;
+  }
+  
+  requestAnimationFrame(render);
+}
+
+
+render();
+
+// 
+function isOnHeart(x,y){
+	  x = ((x - center_x) / (min_distance * 1.2)) * 1.8;
+	  y = ((y - center_y) / (min_distance)) * - 1.8;
+
+    var x2 = x * x;
+  	var y2 = y * y;
+    // Simplest Equation of lurve
+    return (Math.pow((x2 + y2 - 1), 3) - (x2 * (y2 * y)) <= 0);
+}
+
+
+    
+    </script>
   <script src="/js/app.js"></script>
 
 </body>
